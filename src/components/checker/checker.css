@@ -1,0 +1,92 @@
+.checkerContainer{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	width:100%;
+}
+
+.driverSelectorLabel{
+	padding: 2px;
+	color: #1A1446;
+	font-size: large;
+	font-style: bolder;
+	display:flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.driverSelectorDropdown{
+	margin-bottom: 3px;
+	border-radius: 3px;
+}
+
+.recallSubmitButton {
+	padding: 10px 15px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #1A1446;
+	background-color: #99e5ea;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 0 3px #28a3af;
+	font-weight: bold;
+
+  }
+  
+  .recallSubmitButton:hover {background-color: #06748C; color:white}
+  
+  .recallSubmitButton:active {
+	background-color: #999;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+  .recallListContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:space-around;
+	margin: 10px;
+	width: 80%;
+}
+  
+.vehicleCard {
+
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px; 
+	width: 40%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 400px;
+  }
+  
+
+  .vehicleCard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  .vehicleContainer {
+	padding: 2px 16px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+  }
+
+  .vehicleCardsGrid{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 95%;
+}
+
+.yourVehiclesLabel{
+	margin:15px;
+}
