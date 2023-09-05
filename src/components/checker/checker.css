@@ -1,9 +1,69 @@
+.addDriverButton{
+	padding: 10px 15px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #1A1446;
+	background-color: #99e5ea;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 0 3px #28a3af;
+	font-weight: bold;
+	margin: 10px;
+}
+	  
+.addDriverButton:hover {background-color: #06748C; color:white}
+	  
+.addDriverButton:active {
+	background-color: #999;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.addVehicleButton{
+	padding: 10px 15px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #1A1446;
+	background-color: #99e5ea;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 0 3px #28a3af;
+	font-weight: bold;
+	margin: 10px;
+}
+	  
+.addVehicleButton:hover {background-color: #06748C; color:white}
+	  
+.addVehicleButton:active {
+	background-color: #999;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
 .checkerContainer{
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 	width:100%;
 }
+
+.carIcon{
+	max-height: 70px;
+	max-width: 70px;
+}
+
+.cardTitle{
+display:flex;
+justify-content: center;
+padding: 5px;
+text-align: center;
+}
+
 
 .driverSelectorLabel{
 	padding: 2px;
@@ -15,10 +75,30 @@
 	margin: 10px;
 }
 
+
 .driverSelectorDropdown{
-	margin-bottom: 3px;
-	border-radius: 3px;
-}
+	border-radius:7px;
+	display:inline-block;
+	overflow:hidden;
+	background:#cccccc;
+	border:1px solid #cccccc;
+ }
+
+  .dropdown{
+	width:140px;
+	height:40px;
+	border:0px;
+	outline:none;
+/* 	text-align: center; */
+	padding-left: 5px;
+  }
+
+.recallCount {
+	color:#1A1446;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}  
 
 .recallSubmitButton {
 	padding: 10px 15px;
@@ -32,7 +112,7 @@
 	border-radius: 7px;
 	box-shadow: 0 3px #28a3af;
 	font-weight: bold;
-
+	margin: 10px;
   }
   
   .recallSubmitButton:hover {background-color: #06748C; color:white}
@@ -52,8 +132,14 @@
 	width: 80%;
 }
   
-.vehicleCard {
+.trashCanContainer{
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: end;
+}
 
+.vehicleCard {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px; 
@@ -63,6 +149,7 @@
 	justify-content: center;
 	align-items: center;
 	max-width: 400px;
+	margin-top: 15px;
   }
   
 
@@ -77,7 +164,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
+	align-items: center;
   }
 
   .vehicleCardsGrid{

@@ -2,24 +2,12 @@ import "./App.css";
 import Header from "./components/header/header";
 import Checker from "./components/checker/checker";
 import { useState, useEffect } from "react";
-import RecallCard from "./components/recallCard/recallCard";
+
 import React from "react";
 
 function App() {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(false);
+  /* const [error, setError] = useState(false);
   const [drivers, setDrivers] = useState([])
-
-/*   useEffect(() => {
-    const url = `https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2023`;
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setError(false);
-        setData(data);
-      })
-      .catch((error) => setError(true));
-  }, []);  */
 
   
   useEffect(() => {
@@ -33,21 +21,28 @@ function App() {
       })
       .catch((error) => setError(true));
   }, []);
-
-
-  console.log(data);
-
+ */
   return (
     <div className="App">
       <Header />
 
       <div className="appContainer">
-        <Checker drivers={drivers}/>
-      
+        <Checker />
       </div>
 
-
       <div className="recallData"></div>
+      <div className="footer">
+        <div className="yellowFooter"></div>
+        <div className="blueFooter">
+          <div className="copyRight">&copy; 2023 Safety Recall Checker</div> 
+          <div className="contactInfo">
+            Connect with us!<br></br>
+            Jacob Moore<br></br>
+            Dayna Tynan<br></br>
+            Erik Martel
+            </div> 
+        </div>
+      </div>
     </div>
   );
 }
